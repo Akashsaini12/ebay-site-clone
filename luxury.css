@@ -36,13 +36,14 @@ html {
   align-items: center;
 }
 
-.first-nav-sub p {
+.first-nav-sub a {
   color: #000000;
+  text-decoration: none;
 }
-.first-nav-sub p > i {
+.first-nav-sub a > i {
   font-size: 15px;
 }
-.first-nav-sub p:hover {
+.first-nav-sub a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -55,7 +56,147 @@ html {
   font-size: 20px;
   font-weight: 600;
 }
+.wth-lst {
+  position: relative;
+  display: block;
+}
+.wth-lst:hover .watch-lst {
+  display: flex;
+}
+.watch-lst {
+  position: absolute;
+  height: 80px;
+  width: 480px;
+  z-index: 1;
+  top: 23px;
+  right: 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.watch-lst > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #767676;
+}
+.watch-lst > h2 > a {
+  color: #000000;
+  font-weight: 700;
+}
+.my-ebay {
+  position: relative;
+}
+.my-ebay:hover {
+  cursor: pointer;
+}
+.my-ebay:hover .Mebay-ctg-box {
+  display: block;
+  cursor: pointer;
+}
+.Mebay-ctg-box {
+  position: absolute;
+  height: 280px;
+  width: 180px;
+  top: 110%;
+  left: 1%;
+  z-index: 1;
+  display: none;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.Mebay-ctg {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  padding: 15px;
+}
+td {
+  width: 200px;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.Mebay-ctg-td ul {
+  list-style: none;
+}
+.Mebay-ctg-td ul li {
+  margin: 10px 0;
+}
+.Mebay-ctg ul li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+}
+.Mebay-ctg a:hover {
+  text-decoration: underline;
+}
 
+.ntf-sec {
+  position: relative;
+}
+.ntf-sec:hover .ntf-box {
+  display: flex;
+}
+.ntf-box {
+  position: absolute;
+  height: 250px;
+  width: 330px;
+  z-index: 1;
+  top: 23px;
+  right: 0px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.ntf-box > h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #767676;
+}
+.ntf-box > h2 > a {
+  color: #000000;
+  font-weight: 500;
+}
+
+.cart-sec {
+  position: relative;
+}
+.cart-sec:hover .cart-box {
+  display: block;
+}
+.cart-box {
+  position: absolute;
+  height: 70px;
+  width: 220px;
+  z-index: 1;
+  top: 23px;
+  right: 0px;
+  display: none;
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.cart-box > h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+}
+
+.cart-box > h3 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #767676;
+}
 /*----- main-nav -----*/
 
 .main-nav {
@@ -82,12 +223,74 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.ctg:hover .ctg-box {
+  display: block;
 }
 .ctg :hover {
   cursor: pointer;
   color: #0654ba;
 }
-
+.ctg-box {
+  position: absolute;
+  height: 480px;
+  width: 650px;
+  top: 110%;
+  left: 1%;
+  z-index: 1;
+  display: none;
+  background-color: #fff;
+  border: 1px solid gray;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.gh-sbc {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  padding: 15px;
+}
+td {
+  width: 200px;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.gh-sbc-td h3 > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+}
+.gh-sbc-td h3 a > i {
+  font-size: 12px;
+  font-weight: 600;
+}
+.gh-sbc-td ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.gh-sbc-td ul li {
+  margin: 5px 0;
+}
+.gh-sbc-td ul li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+}
+.gh-sbc a:hover {
+  text-decoration: underline;
+}
+#sac-hdn {
+  margin-top: 20px;
+}
+#sac-hdn > a {
+  font-size: 20px;
+  color: #0654ba;
+}
 .search-box {
   height: 42px;
   width: 67.5%;
@@ -117,13 +320,63 @@ html {
   justify-content: space-between;
   padding: 0 10px;
   border-left: 1.5px solid #e8e8e8;
+  position: relative;
 }
+
 .ctg-btn > i {
   font-size: 15px;
 }
 .ctg-btn:hover {
-  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 3px;
 }
+.ctg-btn:hover .ac-ctg-box {
+  display: block;
+}
+.ac-ctg-box {
+  position: absolute;
+  height: 300px;
+  width: 210px;
+  top: 110%;
+  left: 1%;
+  z-index: 1;
+  display: none;
+  overflow-y: scroll;
+  background-color: #fff;
+  border: 1px solid gray;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.gh-ac {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  padding: 15px;
+}
+td {
+  width: 200px;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.gh-ac-td ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.gh-ac-td ul li {
+  margin: 5px 0;
+}
+.gh-ac-td ul li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+}
+.gh-ac a:hover {
+  text-decoration: underline;
+}
+
 .search-btn {
   height: 42px;
   width: 11%;
@@ -166,10 +419,15 @@ html {
   color: #767676;
   font-size: 18px;
 }
-.page-index > p {
+.page-index > a {
   font-size: 13px;
+  text-decoration: none;
+  color: black;
 }
-
+.page-index > a:hover {
+  text-decoration: underline;
+  color: #0654ba;
+}
 /* -----header-sec----- */
 
 .header {
