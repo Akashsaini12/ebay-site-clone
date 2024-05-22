@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica neue", Helvetica, Arial, "sans-serif";
+   
+    
+}
+body{
+    background: url(https://ir.ebaystatic.com/pictures/aw/cmp/ds3/imgbg.jpg) repeat 0 0 #f8f8f8;
+}
+
+.section1{
+    display: flex;
+    gap: 70%;
+    width: 84vw;
+    margin-bottom:10px;
+}
+.leftNavText{
+    font-size: 25px;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-weight: 800;
+
+}
+.rightNavText {
+    display: flex;
+    
+}
+.rightNavText>div{
+    margin: 20px;
+}
+.section2{
+    background-color: white;
+    border: 1px solid rgb(175, 173, 173);
+    width: 78vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    
+}
+.section2UpperCardCont{
+    
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 8%;
+    margin-top: 23px;
+}
+.section2UpperCardCont>div:nth-child(2){
+    margin-top: 3%;
+}
+.section2UpperCardCont>div:nth-child(2)  p{
+    margin-bottom: 20px;
+    
+}
+.section2UpperCardCont>div:nth-child(2)>p:nth-child(1){
+    font-size: 30px;
+    font-weight: 500;
+}
+.section2UpperCardCont>div:nth-child(2)>p:nth-child(2){
+    font-size: 25px;
+    font-weight: 700;
+    color:rgb(54, 53, 53);
+}
+.section2UpperCardCont>div:nth-child(2)>p:nth-child(3){
+    color:rgb(51, 51, 51);
+    font-size: 23px;
+    font-weight: 700;
+}
+.section2UpperCardCont>div:nth-child(2) p>strike{
+    color: gray;
+}
+.section2UpperCardCont>div:nth-child(2)>p:nth-child(1) a{
+    text-decoration: none;
+    color:rgb(63, 62, 62)
+}
+.section2UpperCardCont>div:nth-child(2)>p:nth-child(1) a:hover{
+   text-decoration: underline;
+}
+.section2 h1{
+    border: 1px solid rgb(152, 152, 152);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 13px;
+   
+}
+.section3{
+    border:1px solid rgb(152, 152, 152);
+    width: 76.5vw;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    
+}
+
+.section3 p{
+    font-size: 20px;
+
+
+}
+
+.section4Card{
+    display: flex;
+    border:1px solid rgb(179, 178, 178);
+    width: 25%;
+    gap: 5%;
+    padding-top: 15px;
+    background-color: white;
+    margin-top: 20px;
+    
+    
+}
+.section4Card>div:nth-child(2)>p:nth-child(1){
+    
+    font-size: 17px;
+    line-height:2cap;
+    margin-bottom: 15px;
+}
+
+.section4Card>div:nth-child(2)>p:nth-child(2){
+    font-size:20px ;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.section4Card>div:nth-child(2)>p:nth-child(3){
+    font-size: 15px;
+    color: rgb(197, 2, 2);
+    font-weight: 600;
+}
+
+.section4Card>div:nth-child(2)>p:nth-child(4){
+margin-top: 20%;
+
+}
+.section4CardContainer{
+    display: flex;
+    
+    justify-content: center;
+    gap: 30px
+}
+.section5Card{
+    /* border:1px solid rgb(179, 178, 178); */
+    display: flex;
+    gap: 6%;
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+   
+    
+}
+.section5cardTxtCon>p:nth-child(1){
+
+/* width: 90%; */
+font-size: 19px;
+line-height: 2cap;
+/* text-align: justify; */
+
+}
+.section5cardTxtCon>p:nth-child(2){
+    font-size: 20px;
+    font-weight: 700;
+}
+.section5cardTxtCon>p{
+    margin-bottom: 10px;
+}
+.section5Card>div{
+    margin-top: 20px;
+}
+
+table{
+  width: 78vw;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+.section5MiddleCardCon{
+    background-color: white;
+    height: 61vh;
+    padding-left:15px;
+    width: 27vw;
+    
+}
+
+.section5TxtCon{
+
+}
+.section5TxtCon>p{
+    font-size: 27px;
+    
+}
+.section5CardLast{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    background-color: white;
+
+
+}
+.section5headingCon{
+   
+
+  
+}
+.section5headingCon h1{
+    margin-left: 11%;
+    margin-top: 2%; 
+    margin-bottom: 2%;
+    color:gray
+}
+
+.footer{
+    border: 1px solid gray;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    line-height: 3cap;
+    color:gray;
+    background-color: white;
+    margin-top: 30px;
+    height: 20vh;
+}
+.footerFirstBlock{
+    display: flex;
+}
+
+.footerSecondBlock{
+    display: flex;
+}
+.footerSecondBlock a{
+    color: gray;
+}
+

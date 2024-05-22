@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .card {
+        height: 300px;
+        width: 280px;
+        margin: 50px auto;
+        border: 1px solid red;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+      }
+      .img {
+        height: 250px;
+        width: 100%;
+      }
+      .img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .desc h3 {
+        padding-left: 5px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .desc a {
+        padding-left: 8px;
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="img">
+        <img
+          src="https://i.ebayimg.com/thumbs/images/g/e8AAAOSw8DZk6Nws/s-l225.webp"
+          alt=""
+        />
+      </div>
+      <div class="desc">
+        <h3>Jordan 12 Brilliant</h3>
+        <a href="#">&#x24;599</a>
+      </div>
+    </div>
+  </body>
+</html>
