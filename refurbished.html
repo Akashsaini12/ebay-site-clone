@@ -1,100 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="nav">
-        <div class="left-nav">
-            <span>Hi! <span class="nav-blue">Sign In</span> or <span class="nav-blue">register</span></span>
-            <span>Daily Deals</span>
-             <span>Help & Contact</span> 
-            <a href="./help.html">Help & Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refurbished</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/refurbished.css" />
+  </head>
+  <body>
+    <!-- top- nav -->
+    <div class="first-nav">
+      <div class="first-nav-sub">
+        <p>
+          Hi! <a href="signIn.html"> Sign in</a> or
+          <a href="register2.html">register</a>
+        </p>
+        <a href="#">Daily Deals</a>
+        <a href="#">Help & Contact</a>
+      </div>
+      <div class="first-nav-sub">
+        <a href="#">Sell</a>
+        <div class="wth-lst">
+          <a href="#">Watchlist<i class="ri-arrow-down-s-line"></i></a>
+          <div class="watch-lst">
+            <h2>
+              Please <a href="#">sign in</a> to view items you are watching.
+            </h2>
+          </div>
         </div>
-        <div class="right-nav">
-            <span>Sell</span>
-            <span>WatchList<i class="fa-solid fa-chevron-down"></i></span>
-            <span>My eBay<i class="fa-solid fa-chevron-down"></i></span>
-            <span><i class="fa-regular fa-bell"></i></span>
-            <span><i class="fa-solid fa-cart-shopping"></i></span>
+
+        <div class="my-ebay">
+          <p>My eBay<i class="ri-arrow-down-s-line"></i></p>
+          <div class="Mebay-ctg-box">
+            <table class="Mebay-ctg">
+              <tbody>
+                <tr>
+                  <td class="Mebay-ctg-td">
+                    <ul>
+                      <li><a href="#">Summary</a></li>
+                      <li><a href="#">Recently Viewed</a></li>
+                      <li><a href="#">Bids/Offers</a></li>
+                      <li><a href="#">Watchlist</a></li>
+                      <li><a href="#">Purchase History</a></li>
+                      <li><a href="#">Buy Again</a></li>
+                      <li><a href="#">Selling</a></li>
+                      <li><a href="#">Saved Searches</a></li>
+                      <li><a href="#">Saved Sellers</a></li>
+                      <li><a href="#">Messages</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+
+        <div class="ntf-sec">
+          <a href="#"><i class="ri-notification-3-line"></i></a>
+          <div class="ntf-box">
+            <h2>Please <a href="#">sign in</a> to view notifications.</h2>
+          </div>
+        </div>
+
+        <div class="cart-sec">
+          <a href="#"><i class="ri-shopping-cart-2-line"></i></a>
+          <div class="cart-box">
+            <h2>Your cart is empty</h2>
+            <h3>Time to start shopping!</h3>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="separate"></div>
-
+    <!-- main-nav -->
     <div class="main-nav">
-        <div> <img class="logo" src="./images/ebaylogo.png" alt="ebaylogo"></div>
-        <div class="by-category">Shop By Category<i class="fa-solid fa-chevron-down"></i></div>
-        <div class="form-group">
-            <button class="search-icon" type="submit">
-                <i class="fa fa-search"></i>
-            </button>
+      <div class="logo">
+        <img src="./assets/images/eBay-Logo.png" alt="" />
+      </div>
+      <div class="ctg">
+        <p>Shop by <br />category<i class="ri-arrow-down-s-line"></i></p>
+        <div class="ctg-box">
+          <table class="gh-sbc">
+            <tbody>
+              <tr>
+                <td class="gh-sbc-td">
+                  <h3>
+                    <a href="#"
+                      >Collectibles & art<i class="ri-arrow-right-s-line"></i
+                    ></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Collectibles</a></li>
+                    <li><a href="#">Antiques</a></li>
+                    <li><a href="#">Sports memorabilia</a></li>
+                    <li><a href="#">Art</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#"
+                      >Electronics<i class="ri-arrow-right-s-line"></i
+                    ></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Computers & tablets</a></li>
+                    <li><a href="#">Cameras & photo</a></li>
+                    <li><a href="#">TV, audio & surveillance</a></li>
+                    <li><a href="#">Cell phones & accessories</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#">Fashion<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Jewelry & watches </a></li>
+                    <li><a href="#">Shoes</a></li>
+                  </ul>
+                </td>
 
-            <input class="searchbar" type="text" class="input" placeholder="search">
+                <td class="gh-sbc-td">
+                  <h3>
+                    <a href="#"
+                      >Home & garden<i class="ri-arrow-right-s-line"></i
+                    ></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Yard, garden & outdoor</a></li>
+                    <li><a href="#">Crafts</a></li>
+                    <li><a href="#">Home improvement</a></li>
+                    <li><a href="#">Pet supplies</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#"
+                      >Auto Parts & Accessories<i
+                        class="ri-arrow-right-s-line"
+                      ></i
+                    ></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">GPS & Security Devices</a></li>
+                    <li><a href="#">Radar & Laser Detectors</a></li>
+                    <li><a href="#">Care & Detailing</a></li>
+                    <li><a href="#">Scooter Parts & Accessories</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#"
+                      >Musical instruments & gear<i
+                        class="ri-arrow-right-s-line"
+                      ></i
+                    ></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Guitar</a></li>
+                    <li><a href="#">Pro audio equipment</a></li>
+                    <li><a href="#">String</a></li>
+                    <li><a href="#">Stage lighting & effects</a></li>
+                  </ul>
+                </td>
 
-            <select class="dropdown" name="" id="">
-                <option value="">All Categories</option>
-            </select>
+                <td class="gh-sbc-td">
+                  <h3>
+                    <a href="#"
+                      >Sporting goods<i class="ri-arrow-right-s-line"></i
+                    ></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Outdoor sports</a></li>
+                    <li><a href="#">Team sports</a></li>
+                    <li><a href="#">Exercise & fitness</a></li>
+                    <li><a href="#">Golf</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#"
+                      >Toys & hobbies<i class="ri-arrow-right-s-line"></i
+                    ></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Radio control</a></li>
+                    <li><a href="#">Kids toys</a></li>
+                    <li><a href="#">Action figures</a></li>
+                    <li><a href="#">Dolls & bears</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#"
+                      >Other categories<i class="ri-arrow-right-s-line"></i
+                    ></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Video games & consoles</a></li>
+                    <li><a href="#">Health & beauty</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Business & industrial</a></li>
+                  </ul>
+                  <h3 id="sac-hdn"><a href="#">See all categories</a></h3>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <input class="search-btn" type="button" value="Search">
-        <span class="advanced">Advanced</span>
+      </div>
+
+      <div class="search-box">
+        <i class="ri-search-line"></i>
+        <input
+          id="search-bar"
+          type="search"
+          placeholder="Search for anything"
+        />
+        <div class="ctg-btn">
+          <p>All Categories</p>
+          <i class="ri-arrow-down-s-line"></i>
+          <div class="ac-ctg-box">
+            <table class="gh-ac">
+              <tbody>
+                <tr>
+                  <td class="gh-ac-td">
+                    <ul>
+                      <li><a href="#">All Categories</a></li>
+                      <li><a href="#">-------------------</a></li>
+                      <li><a href="#">Art</a></li>
+                      <li><a href="#">Antiques</a></li>
+                      <li><a href="#">Action figures</a></li>
+                      <li><a href="#">Baby</a></li>
+                      <li><a href="#">Business & industrial</a></li>
+                      <li><a href="#">Crafts</a></li>
+                      <li><a href="#">Care & Detailing</a></li>
+                      <li><a href="#">Collectibles</a></li>
+                      <li><a href="#">Computers & tablets</a></li>
+                      <li><a href="#">Cameras & photo</a></li>
+                      <li><a href="#">Cell phones & accessories</a></li>
+                      <li><a href="#">Dolls & bears</a></li>
+                      <li><a href="#">Exercise & fitness</a></li>
+                      <li><a href="#">Golf</a></li>
+                      <li><a href="#">Guitar</a></li>
+                      <li><a href="#">GPS & Security Devices</a></li>
+                      <li><a href="#">Home improvement</a></li>
+                      <li><a href="#">Health & beauty</a></li>
+                      <li><a href="#">Jewelry & watches </a></li>
+                      <li><a href="#">Kids toys</a></li>
+                      <li><a href="#">Men</a></li>
+                      <li><a href="#">Outdoor sports</a></li>
+                      <li><a href="#">Pet supplies</a></li>
+                      <li><a href="#">Pro audio equipment</a></li>
+                      <li><a href="#">Radio control</a></li>
+                      <li><a href="#">Radar & Laser Detectors</a></li>
+                      <li><a href="#">Shoes</a></li>
+                      <li><a href="#">String</a></li>
+                      <li><a href="#">Scooter Parts & Accessories</a></li>
+                      <li><a href="#">Stage lighting & effects</a></li>
+                      <li><a href="#">Sports memorabilia</a></li>
+                      <li><a href="#">Team sports</a></li>
+                      <li><a href="#">TV, audio & surveillance</a></li>
+                      <li><a href="#">Video games & consoles</a></li>
+                      <li><a href="#">Women</a></li>
+                      <li><a href="#">Yard, garden & outdoor</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-btn">
+        <p>Search</p>
+      </div>
+      <div class="advance">
+        <p>Advanced</p>
+      </div>
     </div>
 
     <p>eBay > eBay Refurbished</p>
 
-    <img src="./images/s-l1600.webp" alt="banner-image" class="banner-image">
+    <img src="./images/s-l1600.webp" alt="banner-image" class="banner-image" />
     <div class="banner-text">
-        <p class="banner-head">Same tech for less</p>
-        <p class="banner-body">Save by shopping Refurbished equipment</p>
+      <p class="banner-head">Same tech for less</p>
+      <p class="banner-body">Save by shopping Refurbished equipment</p>
     </div>
-
 
     <div class="main-body">
-        <div class="side-bar">
-            <h3>Save on refurbished items</h3>
-            <ul>
-                <li>Apple</li>
-                <li>Samsung</li>
-                <li>More SmartPhones</li>
-            </ul>
+      <div class="side-bar">
+        <h3>Save on refurbished items</h3>
+        <ul>
+          <li>Apple</li>
+          <li>Samsung</li>
+          <li>More SmartPhones</li>
+        </ul>
 
-            <div class="separate"></div>
+        <div class="separate"></div>
 
+        <h3>Low prices in top categories</h3>
+        <ul>
+          <li>Laptops</li>
+          <li>SmartPhones</li>
+          <li>Tablets</li>
+        </ul>
 
-            <h3>Low prices in top categories</h3>
-            <ul>
-                <li>Laptops</li>
-                <li>SmartPhones</li>
-                <li>Tablets</li>
-            </ul>
+        <div class="separate"></div>
 
-            <div class="separate"></div>
+        <h3>Discover refurbished appliances</h3>
+        <ul>
+          <li>Apple</li>
+          <li>Samsung</li>
+          <li>More SmartPhones</li>
+        </ul>
 
-            <h3>Discover refurbished appliances</h3>
-            <ul>
-                <li>Apple</li>
-                <li>Samsung</li>
-                <li>More SmartPhones</li>
-            </ul>
+        <div class="separate"></div>
+      </div>
+      <div class="sub-body">
+        <img class="body-section-1" src="./images/s-l1200.webp" alt="" />
 
-            <div class="separate"></div>
-
+        <div class="body-section-2">
+          <img src="./images/s-l640.webp" alt="" />
+          <img src="./images/s-l640 (1).webp" alt="" />
+          <img src="./images/s-l640 (2).webp" alt="" />
         </div>
-        <div class="sub-body">
-            <img class="body-section-1" src="./images/s-l1200.webp" alt="">
-
-            <div class="body-section-2">
-                <img src="./images/s-l640.webp" alt="">
-                <img src="./images/s-l640 (1).webp" alt="">
-                <img src="./images/s-l640 (2).webp" alt="">
-            </div>
-        </div>
+      </div>
     </div>
-
-
-</body>
+  </body>
 </html>

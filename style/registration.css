@@ -24,15 +24,17 @@ html {
   justify-content: space-evenly;
 }
 .imgContainer img:nth-child(1) {
+  height: 80px;
+  width: 120px;
   margin-top: 20px;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 
 .imgContainer img:nth-child(2) {
   height: 45vw;
   width: 45vw;
   border-radius: 30px;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 10px;
 }
 .form-Container {
