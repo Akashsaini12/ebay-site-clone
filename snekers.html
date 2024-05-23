@@ -1,651 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style/snekers.css" />
-    <title>Luxury on eBay product for sale</title>
-  </head>
-  <body onload="loadProduct()">
-    <!-- top-nav -->
 
-    <div class="first-nav">
-      <div class="first-nav-sub">
-        <p>
-          Hi! <a href="signIn.html"> Sign in</a> or
-          <a href="register2.html">register</a>
-        </p>
-        <a href="DailyDeals.html">Daily Deals</a>
-        <a href="help.html">Help & Contact</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/snekers.css" />
+  <title>Luxury on eBay product for sale</title>
+</head>
+
+<body>
+  <!-- top-nav -->
+
+  <div class="first-nav">
+    <div class="first-nav-sub">
+      <p>
+        Hi! <a href="signIn.html"> Sign in</a> or
+        <a href="register2.html">register</a>
+      </p>
+      <a href="DailyDeals.html">Daily Deals</a>
+      <a href="help.html">Help & Contact</a>
+    </div>
+    <div class="first-nav-sub">
+      <a href="Sell.html">Sell</a>
+
+      <div class="wth-lst">
+        <a href="#">Watchlist<i class="ri-arrow-down-s-line"></i></a>
+        <div class="watch-lst">
+          <h2>
+            Please <a href="#">sign in</a> to view items you are watching.
+          </h2>
+        </div>
       </div>
-      <div class="first-nav-sub">
-        <a href="Sell.html">Sell</a>
 
-        <div class="wth-lst">
-          <a href="#">Watchlist<i class="ri-arrow-down-s-line"></i></a>
-          <div class="watch-lst">
-            <h2>
-              Please <a href="#">sign in</a> to view items you are watching.
-            </h2>
-          </div>
+      <div class="my-ebay">
+        <p>My eBay<i class="ri-arrow-down-s-line"></i></p>
+        <div class="Mebay-ctg-box">
+          <table class="Mebay-ctg">
+            <tbody>
+              <tr>
+                <td class="Mebay-ctg-td">
+                  <ul>
+                    <li><a href="#">Summary</a></li>
+                    <li><a href="#">Recently Viewed</a></li>
+                    <li><a href="#">Bids/Offers</a></li>
+                    <li><a href="#">Watchlist</a></li>
+                    <li><a href="#">Purchase History</a></li>
+                    <li><a href="#">Buy Again</a></li>
+                    <li><a href="Sell.html">Selling</a></li>
+                    <li><a href="#">Saved Searches</a></li>
+                    <li><a href="#">Saved Sellers</a></li>
+                    <li><a href="#">Messages</a></li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
 
-        <div class="my-ebay">
-          <p>My eBay<i class="ri-arrow-down-s-line"></i></p>
-          <div class="Mebay-ctg-box">
-            <table class="Mebay-ctg">
-              <tbody>
-                <tr>
-                  <td class="Mebay-ctg-td">
-                    <ul>
-                      <li><a href="#">Summary</a></li>
-                      <li><a href="#">Recently Viewed</a></li>
-                      <li><a href="#">Bids/Offers</a></li>
-                      <li><a href="#">Watchlist</a></li>
-                      <li><a href="#">Purchase History</a></li>
-                      <li><a href="#">Buy Again</a></li>
-                      <li><a href="Sell.html">Selling</a></li>
-                      <li><a href="#">Saved Searches</a></li>
-                      <li><a href="#">Saved Sellers</a></li>
-                      <li><a href="#">Messages</a></li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      <div class="ntf-sec">
+        <a href="#"><i class="ri-notification-3-line"></i></a>
+        <div class="ntf-box">
+          <h2>Please <a href="#">sign in</a> to view notifications.</h2>
         </div>
+      </div>
 
-        <div class="ntf-sec">
-          <a href="#"><i class="ri-notification-3-line"></i></a>
-          <div class="ntf-box">
-            <h2>Please <a href="#">sign in</a> to view notifications.</h2>
-          </div>
-        </div>
-
-        <div class="cart-sec">
-          <a href="#"><i class="ri-shopping-cart-2-line"></i></a>
-          <div class="cart-box">
-            <h2>Your cart is empty</h2>
-            <h3>Time to start shopping!</h3>
-          </div>
+      <div class="cart-sec">
+        <a href="#"><i class="ri-shopping-cart-2-line"></i></a>
+        <div class="cart-box">
+          <h2>Your cart is empty</h2>
+          <h3>Time to start shopping!</h3>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- main-nav -->
-    <div class="container">
-      <div class="main-nav">
-        <div class="logo">
-          <img src="./assets/images/eBay-Logo.png" alt="" />
+  <!-- main-nav -->
+  <div class="container">
+    <div class="main-nav">
+      <div class="logo">
+        <img src="./assets/images/eBay-Logo.png" alt="" />
+      </div>
+      <div class="ctg">
+        <p>Shop by <br />category<i class="ri-arrow-down-s-line"></i></p>
+        <div class="ctg-box">
+          <table class="gh-sbc">
+            <tbody>
+              <tr>
+                <td class="gh-sbc-td">
+                  <h3>
+                    <a href="#">Collectibles & art<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Collectibles</a></li>
+                    <li><a href="#">Antiques</a></li>
+                    <li><a href="#">Sports memorabilia</a></li>
+                    <li><a href="#">Art</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#">Electronics<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Computers & tablets</a></li>
+                    <li><a href="#">Cameras & photo</a></li>
+                    <li><a href="#">TV, audio & surveillance</a></li>
+                    <li><a href="#">Cell phones & accessories</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#">Fashion<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Jewelry & watches </a></li>
+                    <li><a href="#">Shoes</a></li>
+                  </ul>
+                </td>
+
+                <td class="gh-sbc-td">
+                  <h3>
+                    <a href="#">Home & garden<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Yard, garden & outdoor</a></li>
+                    <li><a href="#">Crafts</a></li>
+                    <li><a href="#">Home improvement</a></li>
+                    <li><a href="#">Pet supplies</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#">Auto Parts & Accessories<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">GPS & Security Devices</a></li>
+                    <li><a href="#">Radar & Laser Detectors</a></li>
+                    <li><a href="#">Care & Detailing</a></li>
+                    <li><a href="#">Scooter Parts & Accessories</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#">Musical instruments & gear<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Guitar</a></li>
+                    <li><a href="#">Pro audio equipment</a></li>
+                    <li><a href="#">String</a></li>
+                    <li><a href="#">Stage lighting & effects</a></li>
+                  </ul>
+                </td>
+
+                <td class="gh-sbc-td">
+                  <h3>
+                    <a href="#">Sporting goods<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Outdoor sports</a></li>
+                    <li><a href="#">Team sports</a></li>
+                    <li><a href="#">Exercise & fitness</a></li>
+                    <li><a href="#">Golf</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#">Toys & hobbies<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Radio control</a></li>
+                    <li><a href="#">Kids toys</a></li>
+                    <li><a href="#">Action figures</a></li>
+                    <li><a href="#">Dolls & bears</a></li>
+                  </ul>
+                  <h3>
+                    <a href="#">Other categories<i class="ri-arrow-right-s-line"></i></a>
+                  </h3>
+                  <ul>
+                    <li><a href="#">Video games & consoles</a></li>
+                    <li><a href="#">Health & beauty</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Business & industrial</a></li>
+                  </ul>
+                  <h3 id="sac-hdn"><a href="#">See all categories</a></h3>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="ctg">
-          <p>Shop by <br />category<i class="ri-arrow-down-s-line"></i></p>
-          <div class="ctg-box">
-            <table class="gh-sbc">
+      </div>
+
+      <div class="search-box">
+        <i class="ri-search-line"></i>
+        <input id="search-bar" type="search" placeholder="Search for anything" />
+        <div class="ctg-btn">
+          <p>All Categories</p>
+          <i class="ri-arrow-down-s-line"></i>
+          <div class="ac-ctg-box">
+            <table class="gh-ac">
               <tbody>
                 <tr>
-                  <td class="gh-sbc-td">
-                    <h3>
-                      <a href="#"
-                        >Collectibles & art<i class="ri-arrow-right-s-line"></i
-                      ></a>
-                    </h3>
+                  <td class="gh-ac-td">
                     <ul>
-                      <li><a href="#">Collectibles</a></li>
-                      <li><a href="#">Antiques</a></li>
-                      <li><a href="#">Sports memorabilia</a></li>
+                      <li><a href="#">All Categories</a></li>
+                      <li><a href="#">-------------------</a></li>
                       <li><a href="#">Art</a></li>
-                    </ul>
-                    <h3>
-                      <a href="#"
-                        >Electronics<i class="ri-arrow-right-s-line"></i
-                      ></a>
-                    </h3>
-                    <ul>
-                      <li><a href="#">Computers & tablets</a></li>
-                      <li><a href="#">Cameras & photo</a></li>
-                      <li><a href="#">TV, audio & surveillance</a></li>
-                      <li><a href="#">Cell phones & accessories</a></li>
-                    </ul>
-                    <h3>
-                      <a href="#"
-                        >Fashion<i class="ri-arrow-right-s-line"></i
-                      ></a>
-                    </h3>
-                    <ul>
-                      <li><a href="#">Women</a></li>
-                      <li><a href="#">Men</a></li>
-                      <li><a href="#">Jewelry & watches </a></li>
-                      <li><a href="#">Shoes</a></li>
-                    </ul>
-                  </td>
-
-                  <td class="gh-sbc-td">
-                    <h3>
-                      <a href="#"
-                        >Home & garden<i class="ri-arrow-right-s-line"></i
-                      ></a>
-                    </h3>
-                    <ul>
-                      <li><a href="#">Yard, garden & outdoor</a></li>
-                      <li><a href="#">Crafts</a></li>
-                      <li><a href="#">Home improvement</a></li>
-                      <li><a href="#">Pet supplies</a></li>
-                    </ul>
-                    <h3>
-                      <a href="#"
-                        >Auto Parts & Accessories<i
-                          class="ri-arrow-right-s-line"
-                        ></i
-                      ></a>
-                    </h3>
-                    <ul>
-                      <li><a href="#">GPS & Security Devices</a></li>
-                      <li><a href="#">Radar & Laser Detectors</a></li>
-                      <li><a href="#">Care & Detailing</a></li>
-                      <li><a href="#">Scooter Parts & Accessories</a></li>
-                    </ul>
-                    <h3>
-                      <a href="#"
-                        >Musical instruments & gear<i
-                          class="ri-arrow-right-s-line"
-                        ></i
-                      ></a>
-                    </h3>
-                    <ul>
-                      <li><a href="#">Guitar</a></li>
-                      <li><a href="#">Pro audio equipment</a></li>
-                      <li><a href="#">String</a></li>
-                      <li><a href="#">Stage lighting & effects</a></li>
-                    </ul>
-                  </td>
-
-                  <td class="gh-sbc-td">
-                    <h3>
-                      <a href="#"
-                        >Sporting goods<i class="ri-arrow-right-s-line"></i
-                      ></a>
-                    </h3>
-                    <ul>
-                      <li><a href="#">Outdoor sports</a></li>
-                      <li><a href="#">Team sports</a></li>
-                      <li><a href="#">Exercise & fitness</a></li>
-                      <li><a href="#">Golf</a></li>
-                    </ul>
-                    <h3>
-                      <a href="#"
-                        >Toys & hobbies<i class="ri-arrow-right-s-line"></i
-                      ></a>
-                    </h3>
-                    <ul>
-                      <li><a href="#">Radio control</a></li>
-                      <li><a href="#">Kids toys</a></li>
+                      <li><a href="#">Antiques</a></li>
                       <li><a href="#">Action figures</a></li>
-                      <li><a href="#">Dolls & bears</a></li>
-                    </ul>
-                    <h3>
-                      <a href="#"
-                        >Other categories<i class="ri-arrow-right-s-line"></i
-                      ></a>
-                    </h3>
-                    <ul>
-                      <li><a href="#">Video games & consoles</a></li>
-                      <li><a href="#">Health & beauty</a></li>
                       <li><a href="#">Baby</a></li>
                       <li><a href="#">Business & industrial</a></li>
+                      <li><a href="#">Crafts</a></li>
+                      <li><a href="#">Care & Detailing</a></li>
+                      <li><a href="#">Collectibles</a></li>
+                      <li><a href="#">Computers & tablets</a></li>
+                      <li><a href="#">Cameras & photo</a></li>
+                      <li><a href="#">Cell phones & accessories</a></li>
+                      <li><a href="#">Dolls & bears</a></li>
+                      <li><a href="#">Exercise & fitness</a></li>
+                      <li><a href="#">Golf</a></li>
+                      <li><a href="#">Guitar</a></li>
+                      <li><a href="#">GPS & Security Devices</a></li>
+                      <li><a href="#">Home improvement</a></li>
+                      <li><a href="#">Health & beauty</a></li>
+                      <li><a href="#">Jewelry & watches </a></li>
+                      <li><a href="#">Kids toys</a></li>
+                      <li><a href="#">Men</a></li>
+                      <li><a href="#">Outdoor sports</a></li>
+                      <li><a href="#">Pet supplies</a></li>
+                      <li><a href="#">Pro audio equipment</a></li>
+                      <li><a href="#">Radio control</a></li>
+                      <li><a href="#">Radar & Laser Detectors</a></li>
+                      <li><a href="#">Shoes</a></li>
+                      <li><a href="#">String</a></li>
+                      <li><a href="#">Scooter Parts & Accessories</a></li>
+                      <li><a href="#">Stage lighting & effects</a></li>
+                      <li><a href="#">Sports memorabilia</a></li>
+                      <li><a href="#">Team sports</a></li>
+                      <li><a href="#">TV, audio & surveillance</a></li>
+                      <li><a href="#">Video games & consoles</a></li>
+                      <li><a href="#">Women</a></li>
+                      <li><a href="#">Yard, garden & outdoor</a></li>
                     </ul>
-                    <h3 id="sac-hdn"><a href="#">See all categories</a></h3>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-
-        <div class="search-box">
-          <i class="ri-search-line"></i>
-          <input
-            id="search-bar"
-            type="search"
-            placeholder="Search for anything"
-          />
-          <div class="ctg-btn">
-            <p>All Categories</p>
-            <i class="ri-arrow-down-s-line"></i>
-            <div class="ac-ctg-box">
-              <table class="gh-ac">
-                <tbody>
-                  <tr>
-                    <td class="gh-ac-td">
-                      <ul>
-                        <li><a href="#">All Categories</a></li>
-                        <li><a href="#">-------------------</a></li>
-                        <li><a href="#">Art</a></li>
-                        <li><a href="#">Antiques</a></li>
-                        <li><a href="#">Action figures</a></li>
-                        <li><a href="#">Baby</a></li>
-                        <li><a href="#">Business & industrial</a></li>
-                        <li><a href="#">Crafts</a></li>
-                        <li><a href="#">Care & Detailing</a></li>
-                        <li><a href="#">Collectibles</a></li>
-                        <li><a href="#">Computers & tablets</a></li>
-                        <li><a href="#">Cameras & photo</a></li>
-                        <li><a href="#">Cell phones & accessories</a></li>
-                        <li><a href="#">Dolls & bears</a></li>
-                        <li><a href="#">Exercise & fitness</a></li>
-                        <li><a href="#">Golf</a></li>
-                        <li><a href="#">Guitar</a></li>
-                        <li><a href="#">GPS & Security Devices</a></li>
-                        <li><a href="#">Home improvement</a></li>
-                        <li><a href="#">Health & beauty</a></li>
-                        <li><a href="#">Jewelry & watches </a></li>
-                        <li><a href="#">Kids toys</a></li>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Outdoor sports</a></li>
-                        <li><a href="#">Pet supplies</a></li>
-                        <li><a href="#">Pro audio equipment</a></li>
-                        <li><a href="#">Radio control</a></li>
-                        <li><a href="#">Radar & Laser Detectors</a></li>
-                        <li><a href="#">Shoes</a></li>
-                        <li><a href="#">String</a></li>
-                        <li><a href="#">Scooter Parts & Accessories</a></li>
-                        <li><a href="#">Stage lighting & effects</a></li>
-                        <li><a href="#">Sports memorabilia</a></li>
-                        <li><a href="#">Team sports</a></li>
-                        <li><a href="#">TV, audio & surveillance</a></li>
-                        <li><a href="#">Video games & consoles</a></li>
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Yard, garden & outdoor</a></li>
-                      </ul>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <div class="search-btn">
-          <p>Search</p>
-        </div>
-        <div class="advance">
-          <p>Advanced</p>
-        </div>
       </div>
 
-      <!-- page-index -->
-      <div class="page-index">
-        <a href="home.html" id="pg-1">eBay</a>
-        <i class="ri-arrow-right-s-line"></i>
-        <a href="#" id="pg-2">luxury on eBay</a>
+      <div class="search-btn">
+        <p>Search</p>
       </div>
-
-      <div class="header">
-        <img
-          src="https://i.ebayimg.com/images/g/qx4AAOSwTXBk6Nnv/s-l1600.webp"
-          alt=""
-        />
-        <div class="banner-title">
-          <h1>Add a spring to your step!</h1>
-          <h2>Iconic designs from the sneaker brands you love.</h2>
-        </div>
+      <div class="advance">
+        <p>Advanced</p>
       </div>
+    </div>
 
-      <!-- nav & product sec -->
-      <div class="sub-container">
-        <div class="left-part">
-          <div class="nav-parts">
-            <h3>Shop by brand</h3>
-            <a href="#">Adidas<i class="ri-arrow-down-s-line"></i></a>
-            <a href="#">Nike<i class="ri-arrow-down-s-line"></i></a>
-            <a href="#">Jordan<i class="ri-arrow-down-s-line"></i></a>
-            <a href="#">New Balance</a>
-            <a href="#">PUMA<i class="ri-arrow-down-s-line"></i></a>
-            <a href="#">Reebok<i class="ri-arrow-down-s-line"></i></a>
-            <a href="#">Cpnverse</a>
-            <a href="#">VANS</a>
-            <a href="#">FILA</a>
+    <!-- page-index -->
+    <div class="page-index">
+      <a href="home.html" id="pg-1">eBay</a>
+      <i class="ri-arrow-right-s-line"></i>
+      <a href="#" id="pg-2">luxury on eBay</a>
+    </div>
+
+    <div class="header">
+      <img src="https://i.ebayimg.com/images/g/qx4AAOSwTXBk6Nnv/s-l1600.webp" alt="" />
+      <div class="banner-title">
+        <h1>Add a spring to your step!</h1>
+        <h2>Iconic designs from the sneaker brands you love.</h2>
+      </div>
+    </div>
+
+    <!-- nav & product sec -->
+    <div class="sub-container">
+      <div class="right-part">
+        <!-- hero-sec-1 -->
+
+        <div id="filter-box">
+          <div>
+            <select name="price-sorter" id="fiterByCategory" onchange="filterByCategory()">
+              <option value="">Filter By Category</option>
+              <option value="trending">Trending</option>
+              <option value="nike">Nike</option>
+              <option value="adidas">Adidas</option>
+            </select>
+            <select name="price-sorter" id="sortByPrice" onchange="sortByPrice()">
+              <option value="">Sort By Price</option>
+              <option value="lth">lth</option>
+              <option value="lhtl">htl</option>
+            </select>
           </div>
-          <div class="nav-parts">
-            <h3>Shop by us man size</h3>
-            <a href="#">Less than 6.0</a>
-            <a href="#">6.5</a>
-            <a href="#">7.0</a>
-            <a href="#">7.5</a>
-            <a href="#">8.0</a>
-            <a href="#">8.5</a>
-            <a href="#">9.0</a>
-            <a href="#">9.5</a>
-            <a href="#">10</a>
-            <a href="#">10.5</a>
-            <a href="#">11.0</a>
-            <a href="#">11.5</a>
-            <a href="#">12.0</a>
-            <a href="#">12.5</a>
-            <a href="#">13.0</a>
-            <a href="#">13.5</a>
-            <a href="#">14.0</a>
-            <a href="#">14.5</a>
-            <a href="#"> 15.0</a>
-            <a href="#">15.5</a>
-            <a href="#">16 &lt;</a>
-          </div>
-          <div class="nav-parts">
-            <h3>Shop by us woman size</h3>
-            <a href="#">Less than 5.0</a>
-            <a href="#">5.0</a>
-            <a href="#">6.0</a>
-            <a href="#">6.5</a>
-            <a href="#">7.0</a>
-            <a href="#">7.5</a>
-            <a href="#">8.0</a>
-            <a href="#">8.5</a>
-            <a href="#">9.0</a>
-            <a href="#">9.5</a>
-            <a href="#">10</a>
-            <a href="#">10.5</a>
-            <a href="#">11 &lt;</a>
-          </div>
-          <div class="nav-parts">
-            <h3>Shop by Category</h3>
-            <a href="#">Athletic Vintage Shoes for Men</a>
-            <a href="#">Leather Athletic Vintage Shoes for Men</a>
-            <a href="#">Canvas Athletic Vintage Shoes for Men</a>
-            <a href="#">Suede Athletic Vintage Shoes for Men</a>
-            <a href="#">Athletic 1940s Vintage Shoes for Men</a>
-          </div>
+          <button onclick="resetFun()">Reset</button>
         </div>
-        <div class="right-part">
-          <!-- hero-sec-1 -->
-          <div class="hero-sec">
-            <a href="#">
-              <img
-                src="https://i.ebayimg.com/thumbs/images/g/crkAAOSwclFk6Npy/s-l1200.webp"
-                alt=""
-            /></a>
-          </div>
 
-          <!-- product-card-row1 -->
-          <div class="product-cards-sec">
-            <div class="product-card-sec-h">
-              <h1>Last Releases</h1>
-            </div>
-            <div class="sm-cards">
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/e8AAAOSw8DZk6Nws/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Jordan 12 Brilliant Orange 2023 W</a>
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/mQUAAOSwHbxk6Nwy/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Jordan 1 Retro OG High UNC Toe</a>
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/9KAAAOSw0Gdk6Nw4/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Jordan 7 Chambray 2023</a>
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/eGAAAOSwa31k6Nw9/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Jordan Luka 2 Low Space Hunter</a>
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/RrAAAOSwvJlk6NxD/s-l225.webp"
-                  alt=""
-                />
-                <a href="#"
-                  >Jordan 1 Retro High OG Chicago Reimagined Lost & Found
-                  2022</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- product-card-row2 -->
-          <div class="product-cards-sec">
-            <div class="product-card-sec-h">
-              <h1>Trending Sneakers</h1>
-            </div>
-            <div class="sm-cards">
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/WewAAOSwWdhk6NxW/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Jordan 4 Retro Mid White Oreo</a>
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/kxUAAOSwt3tk6Nxc/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Jordan 3 Retro Mid White Cement Reimagined</a>
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/vewAAOSwAcVk6Nxh/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Jordan 4 Retro Mid Military Black</a>
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/NEsAAOSwYNtk6Nxn/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Nike Dunk Low SB x Concepts Orange Lobster</a>
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/EBMAAOSwoyVk6Nxt/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Jordan 4 Retro Mid Midnight Navy</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- hero-sec-2 -->
-          <div class="hero-sec">
-            <a href="#">
-              <img
-                src="https://i.ebayimg.com/thumbs/images/g/ixIAAOSwPrdk6NrF/s-l1200.webp"
-                alt=""
-            /></a>
-          </div>
-
-          <!-- product-card-row3 -->
-          <div class="big-container">
-            <div class="big-container-heading">
-              <h1>Explore Nike</h1>
-            </div>
-            <div class="big-container-cards">
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/j3MAAOSwzLdk6Nx6/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Air Max </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/OWIAAOSwhdxk6NyC/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Air Force One</a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/RpEAAOSwaABk6NyH/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">React </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/9HMAAOSw9KFk6NyN/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Huarache </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/LuEAAOSw2rpk6NyU/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">SB </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/3K8AAOSwhdBk6Nye/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Lebron</a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/Ow8AAOSwqVBk6Nyk/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Penny Hardaway </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/xVIAAOSwmiRk6Nyq/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Charles Barkley </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/DaEAAOSwHO9k6Nyw/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Dunk </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/sr8AAOSw65Rk7RM0/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Kobe </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- hero-sec-3 -->
-          <div class="hero-sec" id="hero-3">
-            <img
-              src="https://i.ebayimg.com/thumbs/images/g/s4sAAOSw1Llk6NsY/s-l1200.webp"
-              alt=""
-            />
-          </div>
-
-          <!-- product-card-row4 -->
-          <div class="big-container">
-            <div class="big-container-heading">
-              <h1>Explore Adidas</h1>
-            </div>
-            <div class="big-container-cards">
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/I6gAAOSwzH1k6Ny9/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Originals </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/mDsAAOSwlANk6NzD/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">NMD </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/mSAAAOSwO2hk6NzJ/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">EQT </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/EYAAAOSwB7lk6NzO/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Stan Smith</a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/pfYAAOSwaQZk6NzU/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Ultraboost </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/nrMAAOSwBwVk6Nzb/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Tubular </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/qvUAAOSwr-Zk6Nzk/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Adicolor </a>
-              </div>
-              <div class="big-container-card">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/SSIAAOSwLx1k6Nzp/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Superstar </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- hero-sec-4 -->
-          <div class="dif-hero-sec">
-            <img
-              src="https://i.ebayimg.com/thumbs/images/g/K~kAAOSwRPlk6NOg/s-l1200.webp"
-              alt=""
-            />
-            <div class="dif-hero-title">
-              <h1>Big Style, Small Feet.</h1>
-              <h2>Sneakers for girls & boys</h2>
-              <button class="see-all-btn">
-                See All
-                <i class="ri-arrow-right-line"></i>
-              </button>
-            </div>
-          </div>
-
-          <!-- product-card-row5 -->
-          <div class="big-container">
+        <!-- display-all -->
+        <!-- <div class="big-container">
             <div class="big-container-heading">
               <h1>Find your favorites</h1>
             </div>
@@ -721,227 +369,199 @@
                 <a href="#">PUMA </a>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="bottom-card-sec">
-            <div class="bt-cards">
-              <img
-                src="https://i.ebayimg.com/thumbs/images/g/N50AAOSwaShd8trY/s-l640.webp"
-                alt=""
-              />
-              <div class="bt-card-name">
-                <h3>Shoe cleaning</h3>
-                <p>Take care of your sneakers</p>
-              </div>
-            </div>
-            <div class="bt-cards">
-              <img
-                src="https://i.ebayimg.com/thumbs/images/g/mZUAAOSwqNxd8tsT/s-l640.webp"
-                alt=""
-              />
-              <div class="bt-card-name">
-                <h3>Organize your collection</h3>
-                <p>For your sneakers</p>
-              </div>
+        <!-- product-card-row1 -->
+        <div class="product-cards-sec" id="trending">
+          <div class="product-card-sec-h">
+            <h1>Last Releases</h1>
+          </div>
+          <div class="products" id="pd-1">
+
+          </div>
+        </div>
+
+        <!-- hero-sec-4 -->
+        <div class="dif-hero-sec">
+          <img src="https://i.ebayimg.com/thumbs/images/g/K~kAAOSwRPlk6NOg/s-l1200.webp" alt="" />
+          <div class="dif-hero-title">
+            <h1>Big Style, Small Feet.</h1>
+            <h2>Sneakers for girls & boys</h2>
+            <button class="see-all-btn">
+              See All
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="bottom-card-sec">
+          <div class="bt-cards">
+            <img src="https://i.ebayimg.com/thumbs/images/g/N50AAOSwaShd8trY/s-l640.webp" alt="" />
+            <div class="bt-card-name">
+              <h3>Shoe cleaning</h3>
+              <p>Take care of your sneakers</p>
             </div>
           </div>
-
-          <!-- product-card-row6 -->
-          <div class="product-cards-sec">
-            <div class="product-card-sec-h">
-              <h1>Last Releases</h1>
+          <div class="bt-cards">
+            <img src="https://i.ebayimg.com/thumbs/images/g/mZUAAOSwqNxd8tsT/s-l640.webp" alt="" />
+            <div class="bt-card-name">
+              <h3>Organize your collection</h3>
+              <p>For your sneakers</p>
             </div>
-            <div class="sm-cards">
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/VGsAAOSwlqJhY9WI/s-l225.webp"
-                  alt=""
-                />
-                <a href="#"
-                  >Seseno. Shoe Organizer Boxes Clear Plastic Stackable 12
-                  Pack</a
-                >
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/DqkAAOSwNhFiG31p/s-l225.webp"
-                  alt=""
-                />
-                <a href="#">Crep Protect Crates Sneaker Storage Box - Black</a>
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/1oQAAOSwjdZlWosv/s-l225.webp"
-                  alt=""
-                />
-                <a href="#"
-                  >Red Sheild Universal Car Seat Back Protector Child Kick Guard
-                  Mat Protects Aut</a
-                >
-              </div>
-              <div class="pd-cards">
-                <img
-                  src="https://i.ebayimg.com/thumbs/images/g/HC4AAOSwyFpmHuGI/s-l225.webp"
-                  alt=""
-                />
-                <a href="#"
-                  >Under Bed Shoe Storage Organizer Set of 2 Fits 32 Pairs
-                  Reinforced Handles</a
-                >
-              </div>
+          </div>
+        </div>
+
+        <!-- content- container -->
+        <div class="content-container">
+          <!-- text-div-1 -->
+          <div class="text-div-1">
+            <div class="text-sub-sec">
+              <h1>Everything You Need to Know About Buying Sneakers</h1>
+            </div>
+            <div class="text-sub-sec">
+              <p>
+                Old-school is the new cool with a pair of rare or limited
+                edition deadstock collectible sneakers. You don't need to be
+                walking around with a <br />
+                receipt to prove that you own a pair of Yeezy Boost 350,
+                Jordan 1, Nike Sacai, or adidas Ultraboost sneakers. Get on
+                eBay to buy DS and OG <br />
+                sneakers that may only have been worn once.
+              </p>
             </div>
           </div>
 
-          <!-- content- container -->
-          <div class="content-container">
-            <!-- text-div-1 -->
-            <div class="text-div-1">
-              <div class="text-sub-sec">
-                <h1>Everything You Need to Know About Buying Sneakers</h1>
-              </div>
-              <div class="text-sub-sec">
-                <p>
-                  Old-school is the new cool with a pair of rare or limited
-                  edition deadstock collectible sneakers. You don't need to be
-                  walking around with a <br />
-                  receipt to prove that you own a pair of Yeezy Boost 350,
-                  Jordan 1, Nike Sacai, or adidas Ultraboost sneakers. Get on
-                  eBay to buy DS and OG <br />
-                  sneakers that may only have been worn once.
-                </p>
-              </div>
-            </div>
+          <!-- text-div-2 -->
+          <div class="text-div-2">
+            <h1>Every pair of sneakers are unique</h1>
+            <p>
+              Sneaker collecting has become a pastime for buyers hoping to get
+              their hands on limited edition Jordan, Yeezy and Air Force 1
+              sneakers. When <br />
+              Nike OG models like the Nike Dunk and the Nike SB are for sale,
+              potential buyers are attracted by the unique design and the
+              limited number of <br />
+              pairs available. For some, purchasing collectible sneakers is a
+              chance to own a rare item with a unique color scheme, whether
+              accented with <br />
+              black, off-white, or neon. Many sneakers are associated with pop
+              culture trends, celebrities, or movies. Unlike sneakers for
+              everyday use, <br />
+              collectible sneakers are intended to be worn on special
+              occasions or preserved for posterity.
+            </p>
+          </div>
 
-            <!-- text-div-2 -->
-            <div class="text-div-2">
-              <h1>Every pair of sneakers are unique</h1>
-              <p>
-                Sneaker collecting has become a pastime for buyers hoping to get
-                their hands on limited edition Jordan, Yeezy and Air Force 1
-                sneakers. When <br />
-                Nike OG models like the Nike Dunk and the Nike SB are for sale,
-                potential buyers are attracted by the unique design and the
-                limited number of <br />
-                pairs available. For some, purchasing collectible sneakers is a
-                chance to own a rare item with a unique color scheme, whether
-                accented with <br />
-                black, off-white, or neon. Many sneakers are associated with pop
-                culture trends, celebrities, or movies. Unlike sneakers for
-                everyday use, <br />
-                collectible sneakers are intended to be worn on special
-                occasions or preserved for posterity.
-              </p>
-            </div>
+          <!-- text-div-3 -->
+          <div class="text-div-2" id="color-orange">
+            <h1>How should you choose collectible sneakers?</h1>
+            <p>
+              Choosing sneakers is an involved task. It's important to check
+              the stitching, colors, and logo on the sneaker to prove that the
+              model is genuine. If you intend to wear your collectible
+              sneakers often, choose darker colors that won't show scuffs so
+              easily. The rarer a sneaker is, the more of an investment
+              opportunity it could be, as its value will only increase over
+              time. Consider whether the shoes will be preserved in the
+              climate conditions that you live in. Unique features such as
+              embossed initials, metallic paint, and neon soles are
+              eye-catching and help to justify the sales price for collectible
+              sneakers.
+            </p>
+          </div>
 
-            <!-- text-div-3 -->
-            <div class="text-div-2" id="color-orange">
-              <h1>How should you choose collectible sneakers?</h1>
-              <p>
-                Choosing sneakers is an involved task. It's important to check
-                the stitching, colors, and logo on the sneaker to prove that the
-                model is genuine. If you intend to wear your collectible
-                sneakers often, choose darker colors that won't show scuffs so
-                easily. The rarer a sneaker is, the more of an investment
-                opportunity it could be, as its value will only increase over
-                time. Consider whether the shoes will be preserved in the
-                climate conditions that you live in. Unique features such as
-                embossed initials, metallic paint, and neon soles are
-                eye-catching and help to justify the sales price for collectible
-                sneakers.
-              </p>
-            </div>
+          <!-- text-div-4 -->
+          <div class="text-div-2" id="color-yellow">
+            <h1>Which collectible sneakers are available on eBay?</h1>
+            <p>
+              You can find new and lightly used sneakers on eBay. Authentic
+              sneakers from top brands like adidas, Nike, and Jordan Retro are
+              available. Jordan Retro sneakers come in many models such as the
+              Jordan 1, the Jordan 11, the Jordan 4, and the Jordan 3. Jordan
+              Travis Scott sneakers can be identified by their logo and
+              material for authenticity. Stay on trend but low key with the
+              Yeezy 700. The Nike Off-White and adidas Off-White sneakers are
+              great for those looking for a less mainstream look. Hot products
+              like the Nike Air Max and the Nike SB Dunk are also available on
+              eBay for purchase. Basketball players will enjoy having a pair
+              of Air Jordan sneakers so they can imagine flying like Mike.
+            </p>
+            <p>
+              Collecting sneakers is no longer a rare phenomenon and can have
+              different meanings for different people. For some, it could be
+              an opportunity to own something special, whereas for others it
+              could be an investment. Sneakerheads from all over the world are
+              always on the lookout for new releases and limited-edition
+              models and there are a lot of factors that need to be considered
+              before getting your hands on collectible sneakers. A wide range
+              of collectible sneakers is available on eBay for you to choose
+              from, so learn more about sneakers from <a href="#">adidas,</a>
+              <a href="#">Jordan,</a> <a href="#">Golden Goose,</a>
+              <a href="#">Converse,</a> and <a href="#">Nike Air</a> Force on
+              our Sneakers articles.
+            </p>
+          </div>
 
-            <!-- text-div-4 -->
-            <div class="text-div-2" id="color-yellow">
-              <h1>Which collectible sneakers are available on eBay?</h1>
-              <p>
-                You can find new and lightly used sneakers on eBay. Authentic
-                sneakers from top brands like adidas, Nike, and Jordan Retro are
-                available. Jordan Retro sneakers come in many models such as the
-                Jordan 1, the Jordan 11, the Jordan 4, and the Jordan 3. Jordan
-                Travis Scott sneakers can be identified by their logo and
-                material for authenticity. Stay on trend but low key with the
-                Yeezy 700. The Nike Off-White and adidas Off-White sneakers are
-                great for those looking for a less mainstream look. Hot products
-                like the Nike Air Max and the Nike SB Dunk are also available on
-                eBay for purchase. Basketball players will enjoy having a pair
-                of Air Jordan sneakers so they can imagine flying like Mike.
-              </p>
-              <p>
-                Collecting sneakers is no longer a rare phenomenon and can have
-                different meanings for different people. For some, it could be
-                an opportunity to own something special, whereas for others it
-                could be an investment. Sneakerheads from all over the world are
-                always on the lookout for new releases and limited-edition
-                models and there are a lot of factors that need to be considered
-                before getting your hands on collectible sneakers. A wide range
-                of collectible sneakers is available on eBay for you to choose
-                from, so learn more about sneakers from <a href="#">adidas,</a>
-                <a href="#">Jordan,</a> <a href="#">Golden Goose,</a>
-                <a href="#">Converse,</a> and <a href="#">Nike Air</a> Force on
-                our Sneakers articles.
-              </p>
-            </div>
+          <!-- text-div-5 -->
+          <div class="text-div-2" id="color-orange">
+            <h1>Sneaker Release Dates, News and Articles</h1>
+            <p>
+              Stay ahead of the game and be the first to know about eBay
+              latest sneaker releases, news, and
+              <a href="#">lifestyle guides.</a> Get exclusive information and
+              updates on the <a href="#">coolest sneakers</a> around. Whether
+              you're into basketball, football, soccer or tennis, you'll find
+              <a href="#">sporting articles</a> to help you decide on which
+              sneaker to buy for your sport of choice!
+            </p>
+          </div>
 
-            <!-- text-div-5 -->
-            <div class="text-div-2" id="color-orange">
-              <h1>Sneaker Release Dates, News and Articles</h1>
-              <p>
-                Stay ahead of the game and be the first to know about eBay
-                latest sneaker releases, news, and
-                <a href="#">lifestyle guides.</a> Get exclusive information and
-                updates on the <a href="#">coolest sneakers</a> around. Whether
-                you're into basketball, football, soccer or tennis, you'll find
-                <a href="#">sporting articles</a> to help you decide on which
-                sneaker to buy for your sport of choice!
-              </p>
-            </div>
+          <!-- div-5-FAQs -->
+          <div class="FAQs-list">
+            <h1>Collectible Sneakers FAQs</h1>
+            <i class="ri-add-line"></i>
+          </div>
 
-            <!-- div-5-FAQs -->
-            <div class="FAQs-list">
-              <h1>Collectible Sneakers FAQs</h1>
-              <i class="ri-add-line"></i>
-            </div>
-
-            <!-- text-div-7 -->
-            <div class="text-div-7">
-              <p>
-                Content provided for informational purposes only. eBay is not
-                affiliated with or endorsed by Nike or adidas.
-              </p>
-            </div>
+          <!-- text-div-7 -->
+          <div class="text-div-7">
+            <p>
+              Content provided for informational purposes only. eBay is not
+              affiliated with or endorsed by Nike or adidas.
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- footer -->
-    <div class="footer">
-      <div class="links">
-        <a href="#">About eBay</a>
-        <a href="#">Announcements</a>
-        <a href="#">Community</a>
-        <a href="#">Security Center</a>
-        <a href="#">Seller Information Center</a>
-        <a href="#">Policies</a>
-        <a href="#">Affiliates</a>
-        <a href="#">Help & Contact</a>
-        <a href="#">Site Map</a>
-      </div>
-      <div class="copyrights">
-        <p>
-          Copyright © 1995-2024 eBay Inc. All Rights Reserved
-          <a href="#">Accessibility,</a>
-          <a href="#">User Agreement,</a>
-          <a href="#">Privacy,</a>
-          <a href="#">Payments Terms of Use,</a>
-          <a href="#">Cookies,</a>
-          <a href="#">CA Privacy Notice,</a>
-          <a href="#">Your Privacy Choices, </a>
-          and
-          <a href="#"> AdChoice</a>
-        </p>
-      </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    <div class="links">
+      <a href="#">About eBay</a>
+      <a href="#">Announcements</a>
+      <a href="#">Community</a>
+      <a href="#">Security Center</a>
+      <a href="#">Seller Information Center</a>
+      <a href="#">Policies</a>
+      <a href="#">Affiliates</a>
+      <a href="#">Help & Contact</a>
+      <a href="#">Site Map</a>
     </div>
-    <script src="./script/snekers.js"></script>
-  </body>
+    <div class="copyrights">
+      <p>
+        Copyright © 1995-2024 eBay Inc. All Rights Reserved
+        <a href="#">Accessibility,</a>
+        <a href="#">User Agreement,</a>
+        <a href="#">Privacy,</a>
+        <a href="#">Payments Terms of Use,</a>
+        <a href="#">Cookies,</a>
+        <a href="#">CA Privacy Notice,</a>
+        <a href="#">Your Privacy Choices, </a>
+        and
+        <a href="#"> AdChoice</a>
+      </p>
+    </div>
+  </div>
+  <script src="./script/snekers.js"></script>
+</body>
+
 </html>

@@ -525,18 +525,69 @@ td {
 .sub-card-name > a:hover {
   text-decoration: underline;
 }
-/* -----product-cards----- */
 
-.product-cards-sec {
-  height: 340px;
-  width: 100%;
+/* -----product-cards----- */
+.products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 300px);
+  gap: 20px;
+}
+.products > div {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 8px 2px;
+  height: 300px;
+  width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 3px;
+  border-radius: 10px;
+}
+.products > div > button {
+  padding: 10px 10px;
+  border: none;
+  background-color: rgb(255, 106, 0);
+  border-radius: 10px;
+  color: white;
+}
+.products > div > h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.products > div > img {
+  width: 97%;
+  height: 64%;
+  border-radius: 5px;
+}
+.products > div > p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.products > div > h3:hover {
+  text-decoration: underline;
+}
+.products > div > img:hover {
+  border: 2px solid #e8e8e8;
+}
+.products > div:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* -------------------------- */
+/* -----product-cards----- */
+
+.product-cards-sec {
+  height: 670px;
+  width: 100%;
+  display: flex;
+  gap: 13px;
+  margin: 12px 0;
+  flex-direction: column;
+  justify-content: space-between;
   border-bottom: 1px solid #e8e8e8;
 }
-
 .product-card-sec-h {
   height: 80px;
   width: 100%;
@@ -546,32 +597,6 @@ td {
 }
 .product-card-sec-h > h1 {
   font-size: 25px;
-}
-.sm-cards {
-  height: 260px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.pd-cards {
-  width: 18%;
-  height: 100%;
-  text-align: center;
-}
-.pd-cards > img {
-  height: 80%;
-  width: 100%;
-  object-fit: cover;
-}
-.pd-cards > a {
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
-  text-align: center;
-}
-.pd-cards > a:hover {
-  text-decoration: underline;
 }
 
 /* -----Hero-sec----- */
