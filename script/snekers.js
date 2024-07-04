@@ -252,7 +252,7 @@ var data = JSON.parse(localStorage.getItem("productData")) || [];
 displayProduct(data);
 
 function sortByPrice(data) {
-  var value = document.querySelector("#sortByPrice").value;
+  var value = document.querySelector("#lth").value;
   if (value === "lth") {
     data.sort(function (a, b) {
       return a.price - b.price;

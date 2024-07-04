@@ -1,4 +1,4 @@
-var productData = [
+const productData = [
   {
     id: "1",
     ModelName: "nePlus 10T 5G",
@@ -230,16 +230,14 @@ function displayProduct(data) {
     var productPrice = document.createElement("p");
     productPrice.innerText = "₹ " + ele.price;
 
-
     var addToCartBtn = document.createElement("button");
 
     box.append(productImage, productDesc, productPrice, addToCartBtn);
 
     addToCartBtn.innerText = "Add to Cart";
-    addToCartBtn.addEventListener("click", function () {
-      addToCart(ele);
+    addToCartBtn.addEventListener("click", function (event) {
     });
-
+    console.log(index);
     if (ele.category === "apple") {
       productDiv1.append(box);
     } else if (ele.category === "oneplus") {

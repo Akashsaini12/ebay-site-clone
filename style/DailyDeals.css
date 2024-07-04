@@ -1,409 +1,390 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-body{
-    background: url(https://ir.ebaystatic.com/pictures/aw/cmp/ds3/imgbg.jpg) repeat 0 0 #f8f8f8;
+body {
+  background: url(https://ir.ebaystatic.com/pictures/aw/cmp/ds3/imgbg.jpg)
+    repeat 0 0 #f8f8f8;
 }
 
 /* -----top-nav---- */
 .first-nav {
-    height: 31px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1.5px solid #e8e8e8;
-    padding: 0 32px;
-  }
-  
-  .first-nav-sub {
-    font-size: 12px;
-    height: 100%;
-    width: 22%;
-    gap: 25px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .first-nav-sub a {
-    color: #000000;
-    text-decoration: none;
-  }
-  .first-nav-sub a > i {
-    font-size: 15px;
-  }
-  .first-nav-sub a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  .first-nav-sub p > a {
-    color: #0654ba;
-  }
-  
-  .first-nav-sub > i {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .wth-lst {
-    position: relative;
-    display: block;
-  }
-  .wth-lst:hover .watch-lst {
-    display: flex;
-  }
-  .watch-lst {
-    position: absolute;
-    height: 80px;
-    width: 480px;
-    z-index: 1;
-    top: 23px;
-    right: 0px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  }
-  .watch-lst > h2 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #767676;
-  }
-  .watch-lst > h2 > a {
-    color: #000000;
-    font-weight: 700;
-  }
-  .my-ebay {
-    position: relative;
-  }
-  .my-ebay:hover {
-    cursor: pointer;
-  }
-  .my-ebay:hover .Mebay-ctg-box {
-    display: block;
-    cursor: pointer;
-  }
-  .Mebay-ctg-box {
-    position: absolute;
-    height: 280px;
-    width: 180px;
-    top: 110%;
-    left: 1%;
-    z-index: 1;
-    display: none;
-    background-color: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  }
-  .Mebay-ctg {
-    height: 100%;
-    width: 100%;
-    border-collapse: collapse;
-  }
-  tr {
-    padding: 15px;
-  }
-  td {
-    width: 200px;
-    vertical-align: top;
-    padding-left: 15px;
-    padding-top: 15px;
-  }
-  .Mebay-ctg-td ul {
-    list-style: none;
-  }
-  .Mebay-ctg-td ul li {
-    margin: 10px 0;
-  }
-  .Mebay-ctg ul li > a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 12px;
-  }
-  .Mebay-ctg a:hover {
-    text-decoration: underline;
-  }
-  
-  .ntf-sec {
-    position: relative;
-  }
-  .ntf-sec:hover .ntf-box {
-    display: flex;
-  }
-  .ntf-box {
-    position: absolute;
-    height: 250px;
-    width: 330px;
-    z-index: 1;
-    top: 23px;
-    right: 0px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  }
-  .ntf-box > h2 {
-    font-size: 18px;
-    font-weight: 400;
-    color: #767676;
-  }
-  .ntf-box > h2 > a {
-    color: #000000;
-    font-weight: 500;
-  }
-  
-  .cart-sec {
-    position: relative;
-  }
-  .cart-sec:hover .cart-box {
-    display: block;
-  }
-  .cart-box {
-    position: absolute;
-    height: 70px;
-    width: 220px;
-    z-index: 1;
-    top: 23px;
-    right: 0px;
-    display: none;
-    padding: 10px;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  }
-  .cart-box > h2 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #767676;
-  }
-  
-  .cart-box > h3 {
-    font-size: 13px;
-    font-weight: 400;
-    color: #767676;
-  }
-
-.section2{
-    background-color: white;
-    border: 1px solid rgb(175, 173, 173);
-    width: 78vw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 70vh;
-    
-}
-.section2UpperCardCont{
-    
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    gap: 8%;
-    margin-top: 23px;
-}
-.section2UpperCardCont>div:nth-child(2){
-    margin-top: 3%;
-}
-.section2UpperCardCont>div:nth-child(2)  p{
-    margin-bottom: 20px;
-    
-}
-.section2UpperCardCont>div:nth-child(2)>p:nth-child(1){
-    font-size: 30px;
-    font-weight: 500;
-}
-.section2UpperCardCont>div:nth-child(2)>p:nth-child(2){
-    font-size: 25px;
-    font-weight: 700;
-    color:rgb(54, 53, 53);
-}
-.section2UpperCardCont>div:nth-child(2)>p:nth-child(3){
-    color:rgb(51, 51, 51);
-    font-size: 23px;
-    font-weight: 700;
-}
-.section2UpperCardCont>div:nth-child(2) p>strike{
-    color: gray;
-}
-.section2UpperCardCont>div:nth-child(2)>p:nth-child(1) a{
-    text-decoration: none;
-    color:rgb(63, 62, 62)
-}
-.section2UpperCardCont>div:nth-child(2)>p:nth-child(1) a:hover{
-   text-decoration: underline;
-}
-.section2 h1{
-    border: 1px solid rgb(152, 152, 152);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    padding: 13px;
-   
-}
-.section3{
-    border:1px solid rgb(152, 152, 152);
-    width: 76.5vw;
-    padding: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 20px;
-    background-color: white;
-    
+  height: 31px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #e8e8e8;
+  padding: 0 32px;
 }
 
-.section3 p{
-    font-size: 20px;
-
-
+.first-nav-sub {
+  font-size: 12px;
+  height: 100%;
+  width: 22%;
+  gap: 25px;
+  display: flex;
+  align-items: center;
 }
 
-.section4Card{
-    display: flex;
-    border:1px solid rgb(179, 178, 178);
-    width: 25%;
-    gap: 5%;
-    padding-top: 15px;
-    background-color: white;
-    margin-top: 20px;
-    
-    
+.first-nav-sub a {
+  color: #000000;
+  text-decoration: none;
 }
-.section4Card>div:nth-child(2)>p:nth-child(1){
-    
-    font-size: 17px;
-    line-height:2cap;
-    margin-bottom: 15px;
+.first-nav-sub a > i {
+  font-size: 15px;
+}
+.first-nav-sub a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.section4Card>div:nth-child(2)>p:nth-child(2){
-    font-size:20px ;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-.section4Card>div:nth-child(2)>p:nth-child(3){
-    font-size: 15px;
-    color: rgb(197, 2, 2);
-    font-weight: 600;
+.first-nav-sub p > a {
+  color: #0654ba;
 }
 
-.section4Card>div:nth-child(2)>p:nth-child(4){
-margin-top: 20%;
+.first-nav-sub > i {
+  font-size: 20px;
+  font-weight: 600;
+}
+.wth-lst {
+  position: relative;
+  display: block;
+}
+.wth-lst:hover .watch-lst {
+  display: flex;
+}
+.watch-lst {
+  position: absolute;
+  height: 80px;
+  width: 480px;
+  z-index: 1;
+  top: 23px;
+  right: 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.watch-lst > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #767676;
+}
+.watch-lst > h2 > a {
+  color: #000000;
+  font-weight: 700;
+}
+.my-ebay {
+  position: relative;
+}
+.my-ebay:hover {
+  cursor: pointer;
+}
+.my-ebay:hover .Mebay-ctg-box {
+  display: block;
+  cursor: pointer;
+}
+.Mebay-ctg-box {
+  position: absolute;
+  height: 280px;
+  width: 180px;
+  top: 110%;
+  left: 1%;
+  z-index: 1;
+  display: none;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.Mebay-ctg {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+  padding: 15px;
+}
+td {
+  width: 200px;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.Mebay-ctg-td ul {
+  list-style: none;
+}
+.Mebay-ctg-td ul li {
+  margin: 10px 0;
+}
+.Mebay-ctg ul li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+}
+.Mebay-ctg a:hover {
+  text-decoration: underline;
+}
 
+.ntf-sec {
+  position: relative;
 }
-.section4CardContainer{
-    display: flex;
-    
-    justify-content: center;
-    gap: 30px
+.ntf-sec:hover .ntf-box {
+  display: flex;
 }
-.section5Card{
-    /* border:1px solid rgb(179, 178, 178); */
-    display: flex;
-    gap: 6%;
-    width: 100%;
-    height: 30vh;
-    background-color: white;
-   
-    
+.ntf-box {
+  position: absolute;
+  height: 250px;
+  width: 330px;
+  z-index: 1;
+  top: 23px;
+  right: 0px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.section5cardTxtCon>p:nth-child(1){
-
-/* width: 90%; */
-font-size: 19px;
-line-height: 2cap;
-/* text-align: justify; */
-
+.ntf-box > h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #767676;
 }
-.section5cardTxtCon>p:nth-child(2){
-    font-size: 20px;
-    font-weight: 700;
-}
-.section5cardTxtCon>p{
-    margin-bottom: 10px;
-}
-.section5Card>div{
-    margin-top: 20px;
+.ntf-box > h2 > a {
+  color: #000000;
+  font-weight: 500;
 }
 
-table{
+.cart-sec {
+  position: relative;
+}
+.cart-sec:hover .cart-box {
+  display: block;
+}
+.cart-box {
+  position: absolute;
+  height: 70px;
+  width: 220px;
+  z-index: 1;
+  top: 23px;
+  right: 0px;
+  display: none;
+  padding: 10px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.cart-box > h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
+}
+
+.cart-box > h3 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #767676;
+}
+
+.section2 {
+  background-color: white;
+  border: 1px solid rgb(175, 173, 173);
   width: 78vw;
-    border-collapse: collapse;
-    margin: auto;
-
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+}
+.section2UpperCardCont {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* gap: 8%;
+    margin-top: 23px; */
+}
+.section2UpperCardCont > div > img {
+  height: 60%;
+  width: 60%;
+}
+.section2UpperCardCont > div:nth-child(2) {
+  margin-top: 3%;
+}
+.section2UpperCardCont > div:nth-child(2) p {
+  margin-bottom: 20px;
+}
+.section2UpperCardCont > div:nth-child(2) > p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 500;
+}
+.section2UpperCardCont > div:nth-child(2) > p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(54, 53, 53);
+}
+.section2UpperCardCont > div:nth-child(2) > p:nth-child(3) {
+  color: rgb(51, 51, 51);
+  font-size: 23px;
+  font-weight: 700;
+}
+.section2UpperCardCont > div:nth-child(2) p > strike {
+  color: gray;
+}
+.section2UpperCardCont > div:nth-child(2) > p:nth-child(1) a {
+  text-decoration: none;
+  color: rgb(63, 62, 62);
+}
+.section2UpperCardCont > div:nth-child(2) > p:nth-child(1) a:hover {
+  text-decoration: underline;
+}
+.section2 h1 {
+  border: 1px solid rgb(152, 152, 152);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding: 13px;
+}
+.section3 {
+  border: 1px solid rgb(152, 152, 152);
+  width: 76.5vw;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
 }
 
-.section5MiddleCardCon{
-    background-color: white;
-    height: 61vh;
-    padding-left:15px;
-    width: 27vw;
-    
+.section3 p {
+  font-size: 20px;
 }
 
-.section5TxtCon{
-
+.section4Card {
+  display: flex;
+  border: 1px solid rgb(179, 178, 178);
+  width: 25%;
+  gap: 5%;
+  padding-top: 15px;
+  background-color: white;
+  margin-top: 20px;
 }
-.section5TxtCon>p{
-    font-size: 27px;
-    
-}
-.section5CardLast{
-    height: 30vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100%;
-    background-color: white;
-
-
-}
-.section5headingCon{
-   
-
-  
-}
-.section5headingCon h1{
-    margin-left: 11%;
-    margin-top: 2%; 
-    margin-bottom: 2%;
-    color:gray
+.section4Card > div:nth-child(2) > p:nth-child(1) {
+  font-size: 17px;
+  line-height: 2cap;
+  margin-bottom: 15px;
 }
 
-.footer{
-    border: 1px solid gray;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-    line-height: 3cap;
-    color:gray;
-    background-color: white;
-    margin-top: 30px;
-    height: 20vh;
+.section4Card > div:nth-child(2) > p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
-.footerFirstBlock{
-    display: flex;
+.section4Card > div:nth-child(2) > p:nth-child(3) {
+  font-size: 15px;
+  color: rgb(197, 2, 2);
+  font-weight: 600;
 }
 
-.footerSecondBlock{
-    display: flex;
+.section4Card > div:nth-child(2) > p:nth-child(4) {
+  margin-top: 20%;
 }
-.footerSecondBlock a{
-    color: gray;
+.section4CardContainer {
+  display: flex;
+
+  justify-content: center;
+  gap: 30px;
+}
+.section5Card {
+  /* border:1px solid rgb(179, 178, 178); */
+  display: flex;
+  gap: 6%;
+  width: 100%;
+  height: 30vh;
+  background-color: white;
+}
+.section5cardTxtCon > p:nth-child(1) {
+  /* width: 90%; */
+  font-size: 19px;
+  line-height: 2cap;
+  /* text-align: justify; */
+}
+.section5cardTxtCon > p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+}
+.section5cardTxtCon > p {
+  margin-bottom: 10px;
+}
+.section5Card > div {
+  margin-top: 20px;
 }
 
+table {
+  width: 78vw;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.section5MiddleCardCon {
+  background-color: white;
+  height: 61vh;
+  padding-left: 15px;
+  width: 27vw;
+}
+
+.section5TxtCon {
+}
+.section5TxtCon > p {
+  font-size: 27px;
+}
+.section5CardLast {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  background-color: white;
+}
+.section5headingCon {
+}
+.section5headingCon h1 {
+  margin-left: 11%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: gray;
+}
+
+.footer {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 3cap;
+  color: gray;
+  background-color: white;
+  margin-top: 30px;
+  height: 20vh;
+}
+.footerFirstBlock {
+  display: flex;
+}
+
+.footerSecondBlock {
+  display: flex;
+}
+.footerSecondBlock a {
+  color: gray;
+}
